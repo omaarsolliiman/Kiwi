@@ -853,3 +853,43 @@ display: none;
         -o-transform: translate(15px, -100px) !important;
 }
 }
+
+.soon::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "Cooming Soon";
+    width: 150px;
+    height: 35px;
+    position: absolute;
+    left: 0px;
+    transform: scale(0);
+    font-size: 16px;
+    font-family: 'Comfortaa', cursive;
+    background: #00000084;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: 0.3s cubic-bezier(0,0,.5,1);
+    -webkit-transition: 0.3s cubic-bezier(0,0,.5,1);
+    -moz-transition: 0.3s cubic-bezier(0,0,.5,1);
+    -ms-transition: 0.3s cubic-bezier(0,0,.5,1);
+    -o-transition: 0.3s cubic-bezier(0,0,.5,1);
+}
+
+.soon:hover::before {
+
+    left: -175px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
