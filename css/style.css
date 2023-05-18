@@ -854,18 +854,17 @@ display: none;
 }
 }
 
-.soon::before {
+.soon {
     display: flex;
     align-items: center;
     justify-content: center;
-    content: "Cooming Soon";
     width: 150px;
     height: 35px;
-    position: absolute;
-    left: 0px;
-    transform: scale(0);
+    transform: scale(0) translateX(0px);
     font-size: 16px;
     font-family: 'Comfortaa', cursive;
+    position: absolute;
+    top: 17.5px;
     background: #00000084;
     border-radius: 8px;
     backdrop-filter: blur(10px);
@@ -873,10 +872,10 @@ display: none;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
+    -webkit-transform: scale(0) translateX(0px);
+    -moz-transform: scale(0) translateX(0px);
+    -ms-transform: scale(0) translateX(0px);
+    -o-transform: scale(0) translateX(0px);
     transition: 0.3s cubic-bezier(0,0,.5,1);
     -webkit-transition: 0.3s cubic-bezier(0,0,.5,1);
     -moz-transition: 0.3s cubic-bezier(0,0,.5,1);
@@ -884,12 +883,11 @@ display: none;
     -o-transition: 0.3s cubic-bezier(0,0,.5,1);
 }
 
-.soon:hover::before {
-
-    left: -175px;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
+.external1:hover > .soon ,
+.external2:hover > .soon {
+    transform: scale(1) translateX(-175px);
+    -webkit-transform: scale(1) translateX(-175px);
+    -moz-transform: scale(1) translateX(-175px);
+    -ms-transform: scale(1) translateX(-175px);
+    -o-transform: scale(1) translateX(-175px);
 }
